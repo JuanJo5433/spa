@@ -1,0 +1,421 @@
+*{
+    padding: 0; /* Espacio en el documento */
+    margin: 0; /*Margen del documento*/
+    box-sizing: border-box;
+}
+body{
+
+
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background: rgb(228, 239, 238); /* COLOR FONDO */
+  min-height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+img {
+  width: 200px; /* Ancho de la imagen */
+  height: 200px; /* Alto de la imagen */
+  border-radius: 5%; /* Borde de la imagen */
+  object-fit: cover; /* Para dimensionar el objeto */
+}
+
+.dark{
+	background-color: #000000;
+	color: wheat;
+	transition: all 1.5s ease;
+    
+}
+
+#toggle{
+	display: none;
+}
+
+#label_toggle{
+    
+	font: 2em sans-serif;
+	color: #121313;
+	cursor: pointer;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+    padding: 20px 50px;
+    z-index: 100000;
+    background-color: #0000004b;
+
+}
+header.sticky{
+    padding: 5px 100px;
+    background: #ffffff ;
+}
+
+header .logo{
+    position: relative;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}   
+
+header ul li{
+    position: relative;
+    list-style: none;
+    right: 0;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    font-size: 20px;
+    transition: 0.6s;
+}
+header.sticky .logo,
+header.sticky ul li a{
+    color: #000000;
+    
+}
+
+.slider{
+  min-width: 1000px;
+  width: 100%;
+  height: 700px;
+  
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  
+  
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+  
+}
+
+.slides input{
+  display: none;
+  
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  
+  
+}
+
+.slide img{
+  min-width: 1000px;
+  width: 100%;
+  height: 700px;
+
+  border-radius: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  
+}
+
+/* SILDER MANUAL */
+
+.navegacion-manual{
+  position: absolute;
+  width: 1500px;
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.manual-btn{
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 50px;
+  
+}
+
+.manual-btn:hover{
+  background: #40d3dc;
+}
+
+#radio1:checked ~ .uno{
+  margin-left: 0;
+}
+#radio2:checked ~ .uno{
+  margin-left: -20%;
+}
+#radio3:checked ~ .uno{
+  margin-left: -40%;
+}
+#radio4:checked ~ .uno{
+  margin-left: -60%;
+}
+
+/* SILDER AUTOMATICO */
+
+.navegacion-auto{
+  position: absolute;
+  display: flex;
+  width: 1500px;
+  justify-content: center;
+  margin-top: 640px;
+
+}
+
+.navegacion-auto div{
+  border:2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navegacion-auto div:not(:last-child){
+  margin-right: 50px;
+}
+
+#radio1:checked ~ .navegacion-auto .auto-btn1{
+  background-color: #40d3dc;
+}
+
+#radio2:checked ~ .navegacion-auto .auto-btn2{
+  background-color: #40d3dc;
+}
+#radio3:checked ~ .navegacion-auto .auto-btn3{
+  background-color: #40d3dc;
+}
+#radio4:checked ~ .navegacion-auto .auto-btn{
+  background-color: #40d3dc;
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    background-size: cover;
+
+}
+
+  
+.contenido {
+  display: flex; /* Alinear el contenido en fila */
+  margin: 60px; /* Margen exterior del contenido */
+}
+
+.articulos {
+  padding-right: 12px; /* Espacio interno a la derecha */
+  width: 100%;
+  margin-right: 20px;
+}
+
+.secciones {
+  border-radius: 10px;
+  display: flex; /* Alinear las secciones en fila */
+  padding: 20px; /* Espacio interno */
+  -webkit-box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.18);
+  background: #ffffff;
+}
+
+.secciones1 {
+  border-radius: 10px;
+  margin-top: 100px;
+  display: flex; /* Alinear las secciones en fila */
+  padding: 20px; /* Espacio interno */
+  -webkit-box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px -2px 10px 1px rgba(0, 0, 0, 0.18);
+  background: #e8f8f5;
+}
+
+.contenido p {
+  font-size: 22px;
+  margin-top: 10px; /* Espacio superior entre el título y el texto */
+}
+
+.secciones {
+  flex-direction: row; /* Alinear los elementos en fila (título y texto lado a lado) */
+}
+
+.secciones .seccion-imagen,
+.secciones1 .seccion-imagen {
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.secciones .seccion-imagen img,
+.secciones1 .seccion-imagen img {
+  width: 300px; /* Ancho de la imagen */
+  height: 300px; /* Alto de la imagen */
+  border-radius: 5%; /* Borde de la imagen */
+  object-fit: cover; /* Para dimensionar el objeto */
+}
+
+.secciones .seccion-contenido,
+.secciones1 .seccion-contenido {
+  flex: 1; /* Ocupar el espacio disponible */
+}
+
+.secciones h2,
+.secciones1 h2 {
+  font-size: 32px;
+  align-items: flex-start;
+  margin-bottom: 10px; /* Espacio inferior entre el título y el texto */
+}
+
+
+.menu-secundario {
+  border-radius: 10px;
+  width:30%; /* Ancho del menú */
+
+  margin-left: 0;
+  margin-right: 0;
+  align-items: center;
+  -webkit-box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.18);
+  -moz-box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.18);
+  box-shadow: 0px -2px 10px 1px rgba(0,0,0,0.18);
+  background: #9faeab08;
+
+}
+
+.menu-secundario a {
+  display: block; /* Mantener elementos en línea */
+  margin-top: 10%; /* Espacio superior */
+
+  text-align: center; /* Centrar texto */
+  color: #157ea6; /* Color del texto */
+  margin-bottom: 20px; /* Margen inferior */
+  font-size:  20px; /* Tamaño de fuente */
+}
+.menu-secundario h3 {
+  margin-top: 15%; /* Espacio superior */
+  display: block; /* Mantener elementos en línea */
+  text-align: center; /* Centrar texto */
+  color: #000000; /* Color del texto */
+  margin-bottom: 20px; /* Margen inferior */
+  font-size: 32px; /* Tamaño de fuente */
+}
+
+footer{
+    width: 100%; /*Ancho del menu*/
+    height: 100px; /*Darle espacio superior*/
+    background-color: #f5f5f5;
+    color: #777;
+    margin-top: auto; /*Darle espacio superior*/
+    
+}
+footer p{
+    text-align:center;/*Texto centrado*/
+    padding: 0px;
+}
+footer img{
+    display: flex; /*coloca la imagen en el centro*/
+    margin: auto; /*Margen automatica*/
+    width: 40px; /*Ancho del logo*/
+    height: 40px; /*largo del logo*/
+}
+
+
+/* -----------dark----------------- */
+
+  
+  .dark {
+    background-color: #121212; /* Cambio del fondo a un tono más oscuro */
+    color: #e0e0e0; /* Cambio del color de fuente a un tono más suave */
+    transition: all 1.5s ease;
+  }
+  
+  /* Estilos para el modo oscuro */
+  .dark header {
+    background-color: #0000004b;
+  }
+  
+  .dark header .logo,
+  .dark header ul li a {
+    color: #ffffff;
+  }
+  
+  /* Asegúrate de que estos estilos también tengan en cuenta el modo oscuro */
+  /* ... */
+  
+  #icon-toggle {
+    font-size: 2em;
+    color: #121313;
+    cursor: pointer;
+  }
+  
+.dark .secciones,
+.dark .secciones1 {
+    background: #121212; /* Cambio del fondo a un tono más oscuro */
+    color: #e0e0e0; /* Cambio del color de fuente a un tono más suave */
+    -webkit-box-shadow: 0px -2px 10px 1px rgba(224, 224, 224, 0.18); /* Cambio del sombreado a un tono más suave */
+    -moz-box-shadow: 0px -2px 10px 1px rgba(224, 224, 224, 0.18); /* Cambio del sombreado a un tono más suave */
+    box-shadow: 0px -2px 10px 1px rgba(224, 224, 224, 0.18); /* Cambio del sombreado a un tono más suave */
+
+    /* Agregar box-shadow de color celeste suave */
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(173, 216, 230, 0.5);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(173, 216, 230, 0.5);
+    box-shadow: 0px 0px 15px 0px rgba(173, 216, 230, 0.5);
+}
+
+.dark footer {
+    background-color: #0f0f0f; /* Cambio del fondo a un tono más oscuro */
+    color: #b0b0b0; /* Cambio del color de fuente a un tono más suave */
+}
+
+/* Ajuste del color de fuente para el título del menú secundario */
+.dark .menu-secundario h3 {
+    color: #e0e0e0; /* Mismo color que el de las secciones en modo oscuro */
+}
+
+/* Nuevos estilos para los títulos y textos de las secciones */
+.dark .titulo-seccion {
+    padding: 20px; /* Espacio interno para el título */
+    text-align: center; /* Centrar el título */
+    background-color: #17385d; /* Color de fondo para el título */
+}
+
+.dark .titulo-seccion h2 {
+    font-size: 32px; /* Tamaño del título */
+}
+
+.dark .texto-seccion {
+    padding: 20px; /* Espacio interno para el texto */
+    text-align: justify; /* Justificar el texto */
+}

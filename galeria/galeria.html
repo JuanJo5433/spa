@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS SPA</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Esto es un spa"/>
+    <meta name="keywords" content="spa, relajacion, descanso, belleza"/>
+    <meta name="author" content="Juan Jose Giraldo">
+    <link rel="shortcut icon" href="img/icono_spa.png">
+</head>
+
+<body>
+    <header id="header">
+        <a href="../index.html" class="logo">OASIS SPA</a></a>
+        
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="../nosotros/Nosotros.html">Quienes somos</a></li>
+            <li><a href="../galeria/Galeria.html">Galeria</a></li>
+            <li><a href="../login/indexlogin.html">Login</a></li>
+            <label for="toggle" id="label_toggle"><i class="fa-sharp fa-solid fa-moon"></i></label>
+            <input type="checkbox" id="toggle">
+        </ul>
+    </header>
+    <section class="banner"></section>    
+    <script src="js/script.js"></script>
+
+    <h1>Galeria</h1>
+    <span class="linea"></span>
+    <section class="galeria">
+        <a href="#image1"><img src="img/aceite.jpg" alt=""></a>
+        <a href="#image2"><img src="img/aceite_cuerpo.jpg" alt=""></a>
+        <a href="#image3"><img src="img/aceite_vegetal.jpg" alt=""></a>
+        <a href="#image4"><img src="img/articulacion.jpg" alt=""></a>
+        <a href="#image5"><img src="img/masaje.jpg" alt=""></a>
+        <a  href="#image6"><img src="img/masajes_t.jpg" alt=""></a>
+    </section>
+
+    <article class="light-box" id="image1">
+        <a href="#image6" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <img src="img/aceite.jpg" alt="">
+        <a href="#image2" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image2">
+        <a href="#image1" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <img src="img/aceite_cuerpo.jpg" alt="">
+        <a href="#image3" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+    
+    <article class="light-box" id="image3">
+        <a href="#image2" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <img src="img/aceite_vegetal.jpg" alt="">
+        <a href="#image4" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image4">
+        <a href="#image3" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <img src="img/articulacion.jpg" alt="">
+        <a href="#image5" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image5">
+        <a href="#image4" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <img src="img/masaje.jpg" alt="">
+        <a href="#image6" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <article class="light-box" id="image6">
+        <a href="#image5" class="next"><i class="fa-solid fa-arrow-left-long"></i></a>
+        <img src="img/masajes_t.jpg" alt="">
+        <a href="#image1" class="next"><i class="fa-solid fa-arrow-right-long"></i></a>
+        <a href="#" class="close">X</a>
+    </article>
+
+    <script src="https://kit.fontawesome.com/65c09eac11.js" crossorigin="anonymous"></script>
+    <footer>
+        <a name="Contacto"><b><center>Estos - Nuestros Contactos</center>
+        </b></a><br>
+        <center><img src="img/logo-facebook.png"></center>
+        <p>
+            Desarrollado por JuanJoseG - CopyRight. - Año 2023
+        </p>
+    </footer>

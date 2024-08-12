@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OASIS SPA</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Esto es un spa"/>
+    <meta name="keywords" content="spa, relajacion, descanso, belleza"/>
+    <meta name="author" content="Juan Jose Giraldo">
+    <link rel="shortcut icon" href="img/icono_spa.png">
+</head>
+
+<body>
+    <header id="header">
+        <a href="index.html" class="logo">OASIS SPA</a></a>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros/Nosotros.html">Quienes somos</a></li>
+            <li><a href="galeria/Galeria.html">Galeria</a></li>
+            <li><a href="login/indexloginreg.html">Login</a></li>
+            <label for="toggle" id="label_toggle"><i class="fa-sharp fa-solid fa-moon"></i></label>
+            <input type="checkbox" id="toggle">
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <script src="js/script.js"></script>
+<!-- 
+    <a class="slide" href=""><img src="img/baño.jpg" /></a>
+    <a class="slide" href=""><img src="img/masaje_piedras.jpg" /></a>
+    <a class="slide" href=""><img src="img/mujer_masaje.jpg" /></a>
+    <a class="slide" href=""><img src="img/mascarilla.jpg" /></a> -->
+
+    <!-- INICIO SLIDER -->
+    <div class="slider">
+        <div class="slides">
+            <!--INICIO BOTONES -->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--FIN BOTONOES-->
+            <!-- SLIDE INICIO -->
+            <div class="slide uno">
+                <img src="img/baño.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/masaje_piedras.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/mujer_masaje.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/mascarilla.jpg" alt="">
+            </div>
+                <!-- SLIDE FIN -->
+            <!-- INICIO NAVEGACION AUTO -->
+            <div class="navegacion-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+            <!-- FIN NAVEGACION AUTO -->
+        </div>
+        <!-- INICIO NAVEGACION MANUAL -->
+        <div class="navegacion-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!-- FIN NAVEGACION MANUAL -->
+    </div>
+    <script src="js/script.js"></script>
+    <!-- FIN SLIDER -->
+
+    <div class="contenido" >
+        <div class="articulos" >
+          <div class="secciones" >
+            <div>
+                <h2>Masaje</h2>
+                <p>Un momento para que su cuerpo tenga el mejor descanso, ayudará a su mente también. En espacio para parejas.</p>
+            </div>
+            <div><img src="img/spa_parejas.jpg"></div>
+          </div>
+          <div class="secciones1">
+            <div>
+                <h2>Baños</h2>
+                <p>En momentos en que el cuerpo necesita y requiere de Descanso, nuestro SPA es la solucion. Ambientes agradables.</p>
+            </div>
+            <div><img src="img/ambientes_agradables.jpg"></div>
+          </div>
+        </div>
+        <div class="menu-secundario">
+            <h3>Otros SPA afiliados en el mundo</h3>
+            <a href="https://www.anantara.com/en/rasananda-koh-phangan" tarjet="_blank">Un gran SPA-Hotel Phangan</a>
+            <a href="">Mas articulos</a>
+            <a href="">Mas articulos</a>
+            <a href="">Mas articulos</a>
+            <a href="">Mas articulos</a> 
+        </div>
+      </div>
+      
+    </div>
+
+    <footer>
+        <a name="Contacto"><b><center>Estos - Nuestros Contactos</center>
+        </b></a><br>
+        <center><img src="img/logo-facebook.png"></center>
+        <p>
+            Desarrollado por JuanJoseG - CopyRight. - Año 2023
+        </p>
+    </footer>
